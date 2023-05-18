@@ -4,7 +4,8 @@ body {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 22px;
+  color:coral
 }
 .container {
   display: flex;
@@ -12,6 +13,7 @@ h2 {
   justify-content: center;
   height: 100vh;
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 .image-container {
@@ -20,6 +22,7 @@ h2 {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .column {
@@ -34,15 +37,61 @@ img {
 .row {
   display: flex;
   flex-direction: row;
-  margin-right: 2rem;
 }
 
-/* CSS */
+/*RESPONSIVE CSS*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media only screen and (min-width: 768px) {  
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+/*DIVIDERS*/
+
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+/* CSS button */
 .button-4 {
   appearance: none;
   background-color: #fafbfc;
   border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
     rgba(255, 255, 255, 0.25) 0 1px 0 inset;
   box-sizing: border-box;
@@ -51,11 +100,11 @@ img {
   display: inline-block;
   font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 20px;
   list-style: none;
-  padding: 4px 8px;
+  padding: 10px 8px;
   position: relative;
   transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   user-select: none;
@@ -64,7 +113,8 @@ img {
   vertical-align: middle;
   white-space: nowrap;
   word-wrap: break-word;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
 }
 
 .button-4:hover {
@@ -98,4 +148,21 @@ img {
 
 .button-4:-webkit-details-marker {
   display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .button-4 {
+    font-size: 12px;
+    padding: 4px 4px;
+  }
+  h2 {
+    font-size: 14px;
+    color:coral;
+    margin: 0;
+  }
+  .left-column {
+    display: flex;
+    flex-direction: row;
+  }
 }

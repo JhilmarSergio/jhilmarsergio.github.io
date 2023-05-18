@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title>Mi página web</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preflop EducaPoker</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -9,77 +12,70 @@
       <div class="left-column">
         <div class="row">
           <div class="column">
-            <h2>OR|4B</h2>
             <button class="button-4" role="button" onclick="showImage(0)">
-              EP
+              OR
             </button>
             <button class="button-4" role="button" onclick="showImage(1)">
-              MP
-            </button>
-            <button class="button-4" role="button" onclick="showImage(2)">
-              CO
-            </button>
-            <button class="button-4" role="button" onclick="showImage(3)">
-              BTN|SB
-            </button>
-          </div>
-          <div class="column">
-            <h2>ROL</h2>
-            <button class="button-4" role="button" onclick="showImage(15)">
               ROL
             </button>
+            <button class="button-4" role="button" onclick="showImage(9)">
+              Cold 4B
+            </button>
+            <div>
+              <hr class="dotted">
+            </div>            
+            <button class="button-4" role="button" onclick="showImage(10)">
+              vs Cold 4B
+            </button>
           </div>
           <div class="column">
-            <h2>Cold 4B</h2>
-            <button class="button-4" role="button" onclick="showImage(16)">
-              Cold 4B
+            <h2>vs 3B:</h2>
+            <button class="button-4" role="button" onclick="showImage(2)">
+              < 5%
+            </button>
+            <button class="button-4" role="button" onclick="showImage(3)">
+              6-7%
+            </button>
+            <button class="button-4" role="button" onclick="showImage(4)">
+              8-9% (General)
+            </button>
+            <button class="button-4" role="button" onclick="showImage(5)">
+              10-11% (BTN vs CO)
+            </button>
+            <button class="button-4" role="button" onclick="showImage(6)">
+              12-14% (SB|BB vs BTN)
+            </button>
+            <button class="button-4" role="button" onclick="showImage(7)">
+              15-17% (BB vs SB)
+            </button>
+            <button class="button-4" role="button" onclick="showImage(8)">
+              18-21%
             </button>
           </div>
         </div>
         <div class="row">
           <div class="column">
-            <h2>vs EP|MP</h2>
-            <button class="button-4" role="button" onclick="showImage(4)">
-              MP|CO
-            </button>
-            <button class="button-4" role="button" onclick="showImage(5)">
-              CO
-            </button>
-            <button class="button-4" role="button" onclick="showImage(6)">
-              BTN
-            </button>
-            <button class="button-4" role="button" onclick="showImage(7)">
-              SB
-            </button>
-            <button class="button-4" role="button" onclick="showImage(8)">
-              BB
-            </button>
-          </div>
-          <div class="column">
-            <h2>vs CO</h2>
-            <button class="button-4" role="button" onclick="showImage(9)">
-              BTN
-            </button>
-            <button class="button-4" role="button" onclick="showImage(10)">
-              SB
-            </button>
+            <h2>vs OR:</h2>
             <button class="button-4" role="button" onclick="showImage(11)">
-              BB
+              0-8% 
             </button>
-          </div>
-          <div class="column">
-            <h2>vs BTN</h2>
             <button class="button-4" role="button" onclick="showImage(12)">
-              SB
+              8-12%
             </button>
             <button class="button-4" role="button" onclick="showImage(13)">
-              BB
+              12-17% (EP)
             </button>
-          </div>
-          <div class="column">
-            <h2>vs SB</h2>
             <button class="button-4" role="button" onclick="showImage(14)">
-              BB
+              17-24% (MP)
+            </button>
+            <button class="button-4" role="button" onclick="showImage(15)">
+              24-33% (CO)
+            </button>
+            <button class="button-4" role="button" onclick="showImage(16)">
+              33-43%
+            </button>
+            <button class="button-4" role="button" onclick="showImage(17)">
+              43-55% (BTN|SB)
             </button>
           </div>
         </div>
@@ -88,7 +84,6 @@
         <img id="image" src="" alt="" />
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
