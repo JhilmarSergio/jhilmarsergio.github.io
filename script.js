@@ -17,6 +17,16 @@ const images = [
   "16--vs_OR_24_33.png",
   "17--vs_OR_33_44.png",
   "18--vs_OR_43_55.png",
+  "19_1_1--OR_EP_MP_CO.png",
+  "20_1_2--OR_BTN_SB.png",
+  "21_2_1--ROL.png",
+  "22_2_2--ROL_Favorable.png",
+  "23--ROL_MP.png",
+  "24--ROL_CO.png",
+  "25--ROL_BTN.png",
+  "26--ROL_SB.png",
+  "27--ROL_BB.png",
+  "28--ROL_BB_vs_SB.png",
 ];
 
 function showImage(index) {
