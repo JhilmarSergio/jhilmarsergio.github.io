@@ -27,6 +27,10 @@ const images = [
   "26--ROL_SB.png",
   "27--ROL_BB.png",
   "28--ROL_BB_vs_SB.png",
+  "29--vs_ep_mp--bb.png",
+  "30--vs_co--bb.png",
+  "31--vs_bu--bb.png",
+  "32--vs_sb--bb.png",
 ];
 
 function showImage(index) {
