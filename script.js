@@ -31,11 +31,12 @@ const images = [
   "30--vs_co--bb.png",
   "31--vs_bu--bb.png",
   "32--vs_sb--bb.png",
-  "33--vs_short.png"
+  "33--vs_short.jpg"
 ];
 
 function showImage(index) {
   const img = document.getElementById("image");
   img.src = images[index];
 }
+
 
